@@ -1,13 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext} from 'react';
 import Gadget from '../Gadget/Gadget';
+import { gadgetContext } from '../Home/Home';
 
 const Gadgets = () => {
-    const [gadgets,setGadgets] = useState([])
-    useEffect(()=>{
-        fetch('gadget.json')
-        .then(res => res.json())
-        .then(data => setGadgets(data))
-    },[])
+    const gadgets = useContext(gadgetContext)
     return (
         <div className='grid grid-cols-3 gap-8 mb-28'>
             {
