@@ -4,7 +4,7 @@ const Gadget = ({gadget}) => {
     const {product_title,product_image,price} =gadget;
     return (
         <div>
-            <div className="card shadow-xl border">
+            <div className="card shadow-xl border bg-white">
                 <figure className="px-8 pt-8">
                     <img
                         src={product_image}
