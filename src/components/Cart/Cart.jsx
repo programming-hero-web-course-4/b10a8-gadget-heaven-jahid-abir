@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { getCartItem } from "../utility/addToDb";
 import CartItem from "../CartItem/CartItem";
+import { useNavigate } from "react-router-dom";
 
 
 
 const Cart = () => {
+    const navigate = useNavigate()
     const [price, setPrice] = useState(0)
     const [gadget, setGadget] = useState([])
     useEffect(() => {
@@ -24,8 +26,12 @@ const Cart = () => {
         setGadget([])
         setPrice(0)
         localStorage.removeItem('cart-item')
-        document.getElementById('my_modal_5').showModal()
+        document.getElementById('my_modal_5').showModal().close()
     }
+    const handleCloseModal = () => {
+        document.getElementById('my_modal_5').close();
+        navigate('/'); // Redirect to home page
+    };
     return (
         <div>
             <div className='flex items-center justify-between my-6'>
@@ -42,7 +48,7 @@ const Cart = () => {
                         <div className="modal-action">
                             <form method="dialog">
                                 {/* if there is a button in form, it will close the modal */}
-                                <button className="btn">Close</button>
+                                <button onClick={handleCloseModal} className="btn">Close</button>
                             </form>
                         </div>
                     </div>
