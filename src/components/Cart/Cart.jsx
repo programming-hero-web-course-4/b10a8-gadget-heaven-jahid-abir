@@ -5,25 +5,46 @@ import CartItem from "../CartItem/CartItem";
 
 
 const Cart = () => {
-    const [gadget,setGadget] = useState([])
-    useEffect(()=>{
+    const [price, setPrice] = useState(0)
+    const [gadget, setGadget] = useState([])
+    useEffect(() => {
         const cartData = getCartItem()
         setGadget(cartData);
-    },[])
- 
+        const totalPrice = cartData.reduce((acc, item) => acc + item.price, 0);
+        setPrice(totalPrice);
+    }, [])
+
+    const handleSortByPrice = () => {
+        const cartData = getCartItem()
+        const sort = [...cartData].sort((a, b) => b.price - a.price)
+        setGadget(sort)
+    }
+
     return (
         <div>
             <div className='flex items-center justify-between my-6'>
                 <h3 className='font-bold text-4xl'>Cart</h3>
                 <div className="flex gap-3">
-                    <h3 className='font-bold text-4xl'>Total Price : </h3>
-                    <button className='px-4 py-2 rounded-3xl font-bold border border-primary text-primary'>Sort by Price</button>
-                    <button className='px-4 py-2 rounded-3xl font-bold border bg-primary text-white'>Purchase</button>
+                    <h3 className='font-bold text-4xl'>Total Price : {price} </h3>
+                    <button onClick={() => handleSortByPrice()} className='px-4 py-2 rounded-3xl font-bold border border-primary text-primary'>Sort by Price</button>
+                    <button onClick={()=>document.getElementById('my_modal_5').showModal()} className='px-4 py-2 rounded-3xl font-bold border bg-primary text-white'>Purchase</button>
                 </div>
+                <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
+                    <div className="modal-box">
+                        <h3 className="font-bold text-lg">Hello!</h3>
+                        <p className="py-4">Press ESC key or click the button below to close</p>
+                        <div className="modal-action">
+                            <form method="dialog">
+                                {/* if there is a button in form, it will close the modal */}
+                                <button className="btn">Close</button>
+                            </form>
+                        </div>
+                    </div>
+                </dialog>
             </div>
             {
-            gadget.map(gadget => <CartItem gadget={gadget} key={gadget.product_id}></CartItem>)
-          }
+                gadget.map(gadget => <CartItem gadget={gadget} key={gadget.product_id}></CartItem>)
+            }
         </div>
     );
 };
