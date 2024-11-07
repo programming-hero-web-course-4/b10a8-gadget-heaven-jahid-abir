@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Gadget = ({gadget}) => {
-    const {product_title,product_image,price,product_id} =gadget;
+    const {product_title,product_image,price,product_id} =gadget || {};
     return (
         <div>
             <div className="card shadow-xl border bg-white">

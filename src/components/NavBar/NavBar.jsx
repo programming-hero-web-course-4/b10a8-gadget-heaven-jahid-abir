@@ -42,7 +42,7 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <button className="px-3 py-3 rounded-full border text-xl mr-3"><IoCartOutline /></button>
+                <NavLink to={'/dashboard'}><button className="px-3 py-3 rounded-full border text-xl mr-3"><IoCartOutline /></button></NavLink>
                 <button className="px-3 py-3 rounded-full border text-xl"><FaRegHeart /></button>
             </div>
         </div>

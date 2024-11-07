@@ -24,7 +24,7 @@ const GadgetContainer = () => {
             </div>
             <div className="grid grid-cols-3 gap-6">
                 {
-                    clicked.length > 0 ? clicked.map(gadget => <Gadget gadget={gadget}></Gadget>) : gadgets.map(gadget => <Gadget key={gadget.product_id} gadget={gadget}></Gadget>)
+                    clicked.length > 0 ? clicked.map(gadget => <Gadget key={gadget.product_id} gadget={gadget}></Gadget>) : gadgets.map(gadget => <Gadget key={gadget.product_id} gadget={gadget}></Gadget>)
                 }
             </div>
         </div>

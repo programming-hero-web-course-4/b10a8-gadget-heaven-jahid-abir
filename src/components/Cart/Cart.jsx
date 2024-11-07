@@ -1,7 +1,16 @@
+import { useEffect, useState } from "react";
+import { getCartItem } from "../utility/addToDb";
+import CartItem from "../CartItem/CartItem";
+
 
 
 const Cart = () => {
-
+    const [gadget,setGadget] = useState([])
+    useEffect(()=>{
+        const cartData = getCartItem()
+        setGadget(cartData);
+    },[])
+ 
     return (
         <div>
             <div className='flex items-center justify-between my-6'>
@@ -12,7 +21,9 @@ const Cart = () => {
                     <button className='px-4 py-2 rounded-3xl font-bold border bg-primary text-white'>Purchase</button>
                 </div>
             </div>
-          
+            {
+            gadget.map(gadget => <CartItem gadget={gadget} key={gadget.product_id}></CartItem>)
+          }
         </div>
     );
 };
