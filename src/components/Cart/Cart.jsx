@@ -20,6 +20,12 @@ const Cart = () => {
         setGadget(sort)
     }
 
+    const handlePurchase = () => {
+        setGadget([])
+        setPrice(0)
+        localStorage.removeItem('cart-item')
+        document.getElementById('my_modal_5').showModal()
+    }
     return (
         <div>
             <div className='flex items-center justify-between my-6'>
@@ -27,7 +33,7 @@ const Cart = () => {
                 <div className="flex gap-3">
                     <h3 className='font-bold text-4xl'>Total Price : {price} </h3>
                     <button onClick={() => handleSortByPrice()} className='px-4 py-2 rounded-3xl font-bold border border-primary text-primary'>Sort by Price</button>
-                    <button onClick={()=>document.getElementById('my_modal_5').showModal()} className='px-4 py-2 rounded-3xl font-bold border bg-primary text-white'>Purchase</button>
+                    <button onClick={()=>handlePurchase()} className='px-4 py-2 rounded-3xl font-bold border bg-primary text-white'>Purchase</button>
                 </div>
                 <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
                     <div className="modal-box">
