@@ -12,7 +12,7 @@ const NavBar = () => {
         <li><NavLink to="/offers">Offers</NavLink></li>
     </>
     return (
-        <div className={`navbar ${location.pathname=== '/' ? 'bg-primary text-white' : 'bg-transparent text-primary'} `}>
+        <div className={`navbar ${location.pathname=== '/' ? 'md:bg-primary md:text-white text-primary' : 'bg-transparent text-primary'} `}>
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
