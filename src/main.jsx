@@ -12,6 +12,7 @@ import Home from './components/Home/Home.jsx';
 import Dashboard from './components/Dashboard/Dashboard.jsx';
 import Statistics from './components/Root/Statistics/Statistics.jsx';
 import GadgetDetails from './components/GadgetDetails/GadgetDetails.jsx';
+import Offers from './components/Offers/Offers.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: '/statistics',
         element : <Statistics></Statistics>
+      },
+      {
+        path:'/offers',
+        element: <Offers></Offers>
       }
     ]
   },

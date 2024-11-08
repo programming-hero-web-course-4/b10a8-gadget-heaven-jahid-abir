@@ -7,8 +7,9 @@ const NavBar = () => {
     const location = useLocation('/')
     const links = <>
         <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="statistics">Statistics</NavLink></li>
-        <li><NavLink to="dashboard">Dashboard</NavLink></li>
+        <li><NavLink to="/statistics">Statistics</NavLink></li>
+        <li><NavLink to="/dashboard">Dashboard</NavLink></li>
+        <li><NavLink to="/offers">Offers</NavLink></li>
     </>
     return (
         <div className={`navbar ${location.pathname=== '/' ? 'bg-primary text-white' : 'bg-transparent text-primary'} `}>
