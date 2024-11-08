@@ -36,10 +36,10 @@ const Cart = () => {
     return (
         <div>
             <Helmet><title>Cart | Gadget Heaven</title></Helmet>
-            <div className='flex items-center justify-between my-6'>
+            <div className='md:flex items-center justify-between my-6 p-4 md:p-0'>
                 <h3 className='font-bold text-4xl'>Cart</h3>
-                <div className="flex gap-3">
-                    <h3 className='font-bold text-4xl flex items-center'>Total Price : <CgDollar /> {price} </h3>
+                <div className="md:flex gap-3">
+                    <h3 className='font-bold md:text-3xl text-xl flex items-center'>Total Price : <CgDollar /> {price} </h3>
                     <button onClick={() => handleSortByPrice()} className='px-4 py-2 rounded-3xl font-bold border border-primary text-primary'>Sort by Price</button>
                     <button onClick={()=>handlePurchase()} className={`${price === 0 ? 'bg-gray-300 px-4 py-2 rounded-3xl cursor-not-allowed opacity-50' : 'px-4 py-2 rounded-3xl font-bold border bg-primary text-white'}`} disabled={price===0}>Purchase</button>
                 </div>

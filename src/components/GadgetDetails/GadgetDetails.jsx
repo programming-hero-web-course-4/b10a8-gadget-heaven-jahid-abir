@@ -1,5 +1,5 @@
 import { MdOutlineShoppingCart } from "react-icons/md";
-import React, { createContext, useEffect, useState } from 'react';
+import React, { createContext } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import { FaRegHeart } from "react-icons/fa";
 import { addToCart, addToWishlist } from "../utility/addToDb";
@@ -24,17 +24,17 @@ const GadgetDetails = () => {
             <Helmet>
             <title>Details | Gadget Heaven</title>
             </Helmet>
-            <div className='relative h-[1000px]'>
-                <div className='bg-primary text-center space-y-4 py-10 h-[600px] rounded-b-2xl'>
-                    <h3 className='font-bold text-6xl w-3/4 mx-auto text-white'>Product Details</h3>
-                    <p className='w-1/2 mx-auto text-gray-100'>Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
+            <div className='md:relative md:mb-20 md:h-[1000px]'>
+                <div className='bg-primary text-center space-y-4 py-10 md:h-[600px] rounded-b-2xl'>
+                    <h3 className='font-bold md:text-6xl text-4xl w-3/4 mx-auto text-white'>Product Details</h3>
+                    <p className='md:w-1/2 w-3/4 mx-auto text-gray-100'>Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
                 </div>
-                <div className='w-2/3 h-[600px] mx-auto absolute top-[63%] transform -translate-y-1/2 left-64'>
-                    <div className="hero bg-white py-20 rounded-xl">
+                <div className='md:w-2/3 md:h-[600px] mx-auto md:absolute static top-[63%] transform md:-translate-y-1/2 left-64'>
+                    <div className="hero bg-white md:py-20 rounded-xl">
                         <div className="hero-content flex-col lg:flex-row">
                             <img
                                 src={product_image}
-                                className="max-w-sm rounded-lg" />
+                                className="md:max-w-sm rounded-lg" />
                             <div className="space-y-2">
                                 <h1 className="text-4xl font-bold">{product_title}</h1>
                                 <p className="py-2 flex items-center">Price :<CgDollar /> {price}</p>

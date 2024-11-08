@@ -20,7 +20,7 @@ const Home = () => {
                 <title>Home | Gadget Heaven</title>
             </Helmet>
             <Banner></Banner>
-            <h3 className='my-10 text-6xl font-bold text-center'>Explore Cutting-Edge Gadgets</h3>
+            <h3 className='my-10 md:text-6xl text-4xl font-bold text-center'>Explore Cutting-Edge Gadgets</h3>
             <GadgetContainer></GadgetContainer>
         </div>
        </gadgetContext.Provider>
