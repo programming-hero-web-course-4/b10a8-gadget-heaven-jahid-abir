@@ -4,7 +4,7 @@
         "product_title": "Sony WH-1000XM5 Headphones",
         "product_image": "https://i.postimg.cc/jdS58bSR/103364-original-local-1200x1050-v3-converted.webp",
         "category": "Audio",
-        "price": 89.99,
+        "price": 89,
         "description": "High-quality wireless headphones with noise-cancellation and deep bass.",
         "Specification": [
             "Bluetooth 5.0",
@@ -20,7 +20,7 @@
         "product_title": "JBL Flip 5 Bluetooth Speaker",
         "product_image": "https://i.postimg.cc/L8qsp3P7/07o-Tv-X6adb-R1-Ylx4l-Lb-MKJ5-1-fit-scale-size-760x427-v1573867106.jpg",
         "category": "Audio",
-        "price": 65.00,
+        "price": 65,
         "description": "Compact speaker with powerful sound and water-resistant design.",
         "Specification": [
             "Bluetooth 5.0",
@@ -36,7 +36,7 @@
         "product_title": "Apple AirPods Pro 2",
         "product_image": "https://i.postimg.cc/Y0qpy6kd/MTJV3.jpg",
         "category": "Audio",
-        "price": 75.99,
+        "price": 75,
         "description": "True wireless earbuds with active noise-canceling and high-quality sound.",
         "Specification": [
             "Bluetooth 5.2",
@@ -52,7 +52,7 @@
         "product_title": "Samsung HW-Q60T Surround Sound",
         "product_image": "https://i.postimg.cc/D0j2VSwn/Samsung-HW-Q60-T-5-1ch-Soundbar-with-Acoustic-Beam-04.jpg",
         "category": "Audio",
-        "price": 120.00,
+        "price": 120,
         "description": "Smart sound bar with powerful sound and voice assistant compatibility.",
         "Specification": [
             "Dolby Audio",
@@ -68,7 +68,7 @@
         "product_title": "Victrola Vintage 3-Speed",
         "product_image": "https://i.postimg.cc/RVhS7LgF/61-z-LGDox4-L-AC-UF894-1000-QL80.jpg",
         "category": "Audio",
-        "price": 150.00,
+        "price": 150,
         "description": "Vintage-style record player with modern connectivity options.",
         "Specification": [
             "Bluetooth 5.0",
@@ -84,7 +84,7 @@
         "product_title": "Bose Acoustimass 10 Home",
         "product_image": "https://i.postimg.cc/FKyNrWHP/cq5dam-web-1000-1000.png",
         "category": "Audio",
-        "price": 299.99,
+        "price": 299,
         "description": "5.1 channel surround sound system for a cinematic experience.",
         "Specification": [
             "5.1 channel",
@@ -100,7 +100,7 @@
         "product_title": "iPhone 14 Pro Max",
         "product_image": "https://i.postimg.cc/MKgSy2cP/i-Phone-14-Pro-Max-price-in-bangladesh.jpg",
         "category": "Phones",
-        "price": 999.99,
+        "price": 999,
         "description": "Flagship smartphone with ultra HD display and advanced camera features.",
         "Specification": [
             "6.7-inch OLED display",
@@ -116,7 +116,7 @@
         "product_title": "Samsung Galaxy A13",
         "product_image": "https://i.postimg.cc/VkMcgGnY/20220509-1652090494-302374.png",
         "category": "Phones",
-        "price": 149.99,
+        "price": 149,
         "description": "Affordable smartphone with all essential features for everyday use.",
         "Specification": [
             "6.1-inch LCD display",
@@ -132,7 +132,7 @@
         "product_title": "Samsung Galaxy Z Fold4",
         "product_image": "https://i.postimg.cc/hGBR5L1V/a8b3ce10cdf2af5ec7a086c1e1e1bb73.jpg",
         "category": "Phones",
-        "price": 1299.99,
+        "price": 1299,
         "description": "Next-generation foldable smartphone with a large, flexible display.",
         "Specification": [
             "7.6-inch foldable display",
@@ -148,7 +148,7 @@
         "product_title": "ASUS ROG Zephyrus G14 Gaming Laptop",
         "product_image": "https://i.postimg.cc/yxWMZv7C/Asus-ROG-Zephyrus-9-1-600x450.webp",
         "category": "Laptops",
-        "price": 1499.99,
+        "price": 1499,
         "description": "High-performance gaming laptop with powerful graphics and fast refresh rate.",
         "Specification": [
             "Intel Core i7",
@@ -164,7 +164,7 @@
         "product_title": "Dell XPS 13 Ultrabook",
         "product_image": "https://i.postimg.cc/BbydcHvL/Dell-XPS-13-Plus-3-3-jpg.webp",
         "category": "Laptops",
-        "price": 1199.00,
+        "price": 1199,
         "description": "Slim and powerful laptop for professionals on the go.",
         "Specification": [
             "Intel Core i5",
@@ -180,7 +180,7 @@
         "product_title": "HP Spectre x360 Convertible Laptop",
         "product_image": "https://i.postimg.cc/BvsRgqJg/15s-fq2644tu-02-500x500-1-jpg.webp",
         "category": "Laptops",
-        "price": 899.99,
+        "price": 899,
         "description": "2-in-1 convertible laptop with touchscreen and flexible hinge.",
         "Specification": [
             "Intel Core i3",
@@ -196,7 +196,7 @@
         "product_title": "Apple Watch Series 8",
         "product_image": "https://i.postimg.cc/RZxYSMJB/Apple-Watch-Series-8-GPS-Cellular-Midnight-4171.jpg",
         "category": "Wearable",
-        "price": 199.99,
+        "price": 199,
         "description": "Smartwatch with heart rate monitor, GPS, and water resistance.",
         "Specification": [
             "Heart rate monitor",
@@ -212,7 +212,7 @@
         "product_title": "Fitbit Charge 5",
         "product_image": "https://i.postimg.cc/hGS3mp0Z/Fitbit-Charge-5-Black-3688.jpg",
         "category": "Wearable",
-        "price": 99.99,
+        "price": 99,
         "description": "Advanced fitness tracker with multiple sports modes and sleep tracking.",
         "Specification": [
             "Step and calorie counter",
@@ -228,7 +228,7 @@
         "product_title": "GoPro HERO10 Black",
         "product_image": "https://i.postimg.cc/9MkxvVHs/61p2f-Yd-YP-L-AC-SL1500.jpg",
         "category": "Cameras",
-        "price": 129.00,
+        "price": 129,
         "description": "Compact 4K action camera with waterproof case and stabilization.",
         "Specification": [
             "4K video resolution",

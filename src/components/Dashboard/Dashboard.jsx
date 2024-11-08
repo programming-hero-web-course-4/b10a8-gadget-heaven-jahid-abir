@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Cart from '../Cart/Cart';
 import Wishlist from '../Wishlist/Wishlist';
+import { Helmet } from 'react-helmet';
 
 const Dashboard = () => {
     const [active,setActive] = useState({status:true,location:'cart'})
@@ -15,6 +16,9 @@ const Dashboard = () => {
    }
     return (
         <div>
+            <Helmet>
+            <title>Dashboard | Gadget Heaven</title>
+            </Helmet>
            <div className='bg-primary text-center space-y-4 py-10 h-[300px] rounded-2xl'>
                 <h3 className='font-bold text-6xl w-3/4 mx-auto text-white'>Dashboard</h3>
                 <p className='w-1/2 mx-auto text-gray-100'>Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>

@@ -25,7 +25,7 @@ const router = createBrowserRouter([
       {
         path:'gadget/:productId',
         element: <GadgetDetails></GadgetDetails>,
-        loader: () => fetch('gadget.json')
+        loader: () => fetch('/gadget.json')
       },
       {
         path: '/dashboard',
@@ -40,6 +40,7 @@ const router = createBrowserRouter([
 ]);
 
 createRoot(document.getElementById('root')).render(
+  
   <StrictMode>
     <RouterProvider router={router} />
   </StrictMode>,

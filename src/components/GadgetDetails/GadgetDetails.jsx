@@ -4,16 +4,13 @@ import { useLoaderData, useParams } from 'react-router-dom';
 import { FaRegHeart } from "react-icons/fa";
 import { addToCart, addToWishlist } from "../utility/addToDb";
 export const cartItemContext = createContext()
+import { CgDollar } from "react-icons/cg";
+import { Helmet } from "react-helmet";
 
 const GadgetDetails = () => {
     const { productId } = useParams()
     const loadData = useLoaderData()
-    const [gadget, setGadget] = useState([])
-    useEffect(() => {
-        const gadgetData = loadData.find(gadget => gadget.product_id == productId)
-        setGadget(gadgetData)
-    }, [productId, loadData])
-
+    const gadget = loadData.find(gadget => gadget?.product_id == productId);
     const { product_title, product_image, price, description, Specification, rating, availability } = gadget;
 
     const handleAddToCart = (gadget) =>{
@@ -24,6 +21,9 @@ const GadgetDetails = () => {
     }
     return (
         <div>
+            <Helmet>
+            <title>Details | Gadget Heaven</title>
+            </Helmet>
             <div className='relative h-[1000px]'>
                 <div className='bg-primary text-center space-y-4 py-10 h-[600px] rounded-b-2xl'>
                     <h3 className='font-bold text-6xl w-3/4 mx-auto text-white'>Product Details</h3>
@@ -37,7 +37,7 @@ const GadgetDetails = () => {
                                 className="max-w-sm rounded-lg" />
                             <div className="space-y-2">
                                 <h1 className="text-4xl font-bold">{product_title}</h1>
-                                <p className="py-2">Price : {price}</p>
+                                <p className="py-2 flex items-center">Price :<CgDollar /> {price}</p>
                                 {
                                     availability ? <button className='px-4 py-1 rounded-2xl bg-green-100 text-green-500'>In Stock</button> : <button className='px-4 py-1 rounded-2xl bg-red-100 text-red-500'>Out of Stock</button>
                                 }
